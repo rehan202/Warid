@@ -1,0 +1,75 @@
+/* CSS Document */
+* {margin: 0; padding: 0;}
+
+body {
+	background: transparent;
+	font-family: Nunito, arial, verdana;
+}
+#accordian {
+	color: white;
+    width: 100%;
+}
+
+#accordian h3 {
+	background: #fff; 
+	
+}
+#accordian h3 a {
+	color: #909090;
+    display: block;
+    font-family: 'oswald';
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 0 0 15px;
+    text-decoration: none;
+	background-color: #f8f8f8;
+}
+
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+#accordian h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+#accordian li {
+	list-style-type: none;
+}
+
+#accordian ul ul li a, #accordian h4 {
+	color: #909090;
+    display: block;
+    font-size: 12px;
+    line-height: 27px;
+    padding: 0 25px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.15s ease 0s;
+}
+
+#accordian ul ul li a:hover {
+	color:#cf0000;
+}
+
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active>ul {
+	display: block;
+}
+
+#accordian ul ul ul{
+	margin-left: 15px; /*border-left: 1px dotted rgba(0, 0, 0, 0.5);*/
+}
+
+#accordian a:not(:only-child):after {
+	/*content: "\f104";*/
+	font-family: fontawesome;
+	position: absolute; right: 10px; top: 0;
+	font-size: 14px;
+}
+#accordian .active>a:not(:only-child):after {
+	/*content: "\f107";*/
+}
