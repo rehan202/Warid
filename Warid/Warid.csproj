@@ -199,6 +199,7 @@
     <Compile Include="Controllers\CustomerCareController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\postpaidController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2494,6 +2495,7 @@
     <Content Include="Views\Home\About - Copy.cshtml" />
     <Content Include="Views\CustomerCare\ContactUs.cshtml" />
     <Content Include="Views\CustomerCare\Index.cshtml" />
+    <Content Include="Views\postpaid\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
