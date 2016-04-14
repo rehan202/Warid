@@ -6,13 +6,12 @@ using System.Web.Mvc;
 
 namespace Warid.Controllers
 {
-    public class postpaidController : Controller
+    public class prepaidController : Controller
     {
-        // GET: postpaid
+        // GET: prepaid
         public ActionResult Index()
         {
             return View();
         }
-        
     }
 }
