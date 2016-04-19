@@ -197,10 +197,12 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerCareController.cs" />
+    <Compile Include="Controllers\entertainmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\postpaidController.cs" />
     <Compile Include="Controllers\prepaidController.cs" />
+    <Compile Include="Controllers\VASController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2498,6 +2500,23 @@
     <Content Include="Views\CustomerCare\Index.cshtml" />
     <Content Include="Views\postpaid\Index.cshtml" />
     <Content Include="Views\prepaid\Index.cshtml" />
+    <Content Include="Views\VAS\Index.cshtml" />
+    <Content Include="Views\VAS\retailersahoolatservices.cshtml" />
+    <Content Include="Views\VAS\bimainsurance.cshtml" />
+    <Content Include="Views\VAS\biometricsimreverification.cshtml" />
+    <Content Include="Views\VAS\entertainment.cshtml" />
+    <Content Include="Views\VAS\infotainment.cshtml" />
+    <Content Include="Views\VAS\music.cshtml" />
+    <Content Include="Views\VAS\religion.cshtml" />
+    <Content Include="Views\VAS\balancetransferservices.cshtml" />
+    <Content Include="Views\VAS\utilities.cshtml" />
+    <Content Include="Views\VAS\mobileapps.cshtml" />
+    <Content Include="Views\VAS\sports.cshtml" />
+    <Content Include="Views\VAS\socialnetworking.cshtml" />
+    <Content Include="Views\entertainment\waridlive.cshtml" />
+    <Content Include="Views\entertainment\waridradiostation.cshtml" />
+    <Content Include="Views\entertainment\waridvoiler.cshtml" />
+    <Content Include="Views\entertainment\dramaline.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
