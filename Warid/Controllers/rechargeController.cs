@@ -6,45 +6,41 @@ using System.Web.Mvc;
 
 namespace Warid.Controllers
 {
-    public class prepaidController : Controller
+    public class rechargeController : Controller
     {
-        // GET: prepaid
-        public ActionResult Index()
+        // GET: recharge
+        public ActionResult rechargeviascratchcard()
         {
             return View();
         }
-        public ActionResult prepaidtopostpaid()
+        public ActionResult waridload()
         {
             return View();
         }
-        public ActionResult Recharge()
+        public ActionResult topupbyatm()
         {
             return View();
         }
-        public ActionResult mobileinternet()
+        public ActionResult onlineprepaidtopup()
         {
             return View();
         }
-        public ActionResult packages()
+        public ActionResult internationaltopup()
         {
             return View();
         }
-        public ActionResult offers()
+        public ActionResult p2p()
         {
             return View();
         }
-        public ActionResult selfcare()
+        public ActionResult advancebalance()
         {
             return View();
         }
-        public ActionResult internationaldialing()
+        public ActionResult topuponroaming()
         {
             return View();
         }
-        public ActionResult smspackages()
-        {
-            return View();
-        }
-       
+
     }
 }
