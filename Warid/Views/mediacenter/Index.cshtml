@@ -1,0 +1,381 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section featuredArea{
+
+<div class="static-banner-box">
+
+    <img src="/assets/services_header_images/media_center/Media_Center.png" alt="Media Center" />
+</div>
+
+}
+
+<div class="container">
+    <div class="row">
+
+
+
+        <!--Ticker Box-->
+
+        <div class="col-md-12">
+            <div class="breadcrumbs-box">
+                <!--Breadcurmbs Start-->
+                <div class="col-md-12">
+                    <div class="col-md-7">
+
+                        <ul>
+
+                            <li><a href="index.html">HOME</a></li>
+
+                            <li>&gt;&nbsp;<a class="breadcrumbs-selected" href="/mediacenter">MEDIA CENTER</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="share-plugin" style=" margin-top:15px; height:45px !important; float:right;">
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-545dbe1745281c9f" async="async"></script>
+                            <script type="text/javascript">
+$(document).ready(function(){
+var width	=	$(window).width();
+
+/*if(width <= 340){
+	$(".addthis_native_toolbox").css( "background-color", "red" );
+  }*/
+$(window).resize(function() {
+  width	=	$(window).width();
+  if(width <= 340){
+	$(".addthis_native_toolbox").addClass('social-height');
+  }else{
+  $(".addthis_native_toolbox").removeClass('social-height');
+
+  }
+});
+
+
+})
+
+                            </script>
+                            <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.waridtel.com/media-center&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;appId=363462563821084" scrolling="no" frameborder="0" style="border:none; float:left; overflow:hidden; width:100px; height:25px; " allowTransparency="true"></iframe>
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div style="float:left !important;" class="addthis_native_toolbox"></div>
+                        </div>
+                    </div>
+
+                </div>                            <!--Breadcurmbs End-->
+            </div>
+        </div>
+
+        <!--Ticker Box-->
+        <!-- page content -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-inner-content-box">
+
+                    <div class="col-md-1">
+                        <div class="om-media-nav">
+                            <!--Media Center Left Navigation Start Here-->
+                            <ul class="pull-right">
+                                <li class="active"><a href="/mediacenter">ALL</a></li>
+                                <li class=""><a href="/mediacenter/tvc">TVC</a></li>
+                                <li class=""><a href="/mediacenter/pressrelease" class="cnt-txt">PRESS RELEASE</a></li>
+                                <li class=""><a href="/mediacenter/events">EVENTS</a></li>
+                                <li class=""><a class="cnt-txt" href="/mediacenter/corporatemagazine">CORPORATE MAGAZINE</a></li>
+                            </ul>                                    <!--Media Center Left Navigation End Here-->
+                        </div>
+                    </div>
+
+                    <div class="col-md-11">
+                        <div class="om-media-box">
+                            <div class="om-media-head">
+                                <h2>MEDIA CENTER</h2>
+                            </div>
+
+                            <div class="om-data video_thumbsnail">
+                                <div class="row">
+
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="javascript:setVideo('assets/media/tvc/video/motorway.flv');" class="show_video">
+                                                <img src="/assets/media/tvc/thumb/motorway-tvc-thumb.png" width="219" height="120" alt="Motorway">
+                                            </a>
+                                            <h4>Motorway</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="javascript:setVideo('assets/media/tvc/video/warid-one-code.flv');" class="show_video">
+                                                <img src="/assets/media/tvc/thumb/warid-one-code.png" width="219" height="120" alt="Warid One Code">
+                                            </a>
+                                            <h4>Warid One Code</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="javascript:setVideo('assets/media/tvc/video/7dayoffer.flv');" class="show_video">
+                                                <img src="/assets/media/tvc/thumb/7dayoffer.png" width="219" height="120" alt="7 Day Offer">
+                                            </a>
+                                            <h4>7 Day Offer</h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- video-pop-up -->
+                                <div id="ajaxVideoDiv" class="main-player-style" style="display:none;float:left;left:33%;position:fixed;text-align:center;top:31%;width:auto;z-index:9999;border:8px solid #999999; border-radius:5px;">
+                                    <span style="position:absolute;top:2px;right:4px;"><a href="javascript:void();" class="close_video"><img src="/assets/images/close.png" border="0" /></a></span>
+                                    <a href="#" style="display:block;width:500px;height:300px" id="player"></a>
+                                    <script type="text/javascript">
+                                                function setVideo(idPath){
+                                                    flowplayer("player", {src: "http://www.waridtel.com/assets/js/flowplayer/flowplayer-3.1.4.swf", wmode: 'transparent'}, {
+                                                               plugins: {
+                                                                controls: {
+                                                                    url: 'flowplayer.controls-3.1.4.swf',
+                                                                    backgroundColor: '#999999',
+                                                                    sliderGradient:'high',
+                                                                    sliderColor:'#ff1207',
+                                                                    progressColor: '#0065c1',
+                                                                    sliderBorder: '1.5px solid #000000',
+                                                                    volumeSliderColor: '#0065c1',
+                                                                    volumeBorder: '#7c7c7c',
+                                                                    buttonOverColor: '#afafaf',
+                                                                    sliderColor: '#8e8e8e',
+                                                                    buttonColor: '#2b2b2b',
+                                                                    timeColor: '#ffffff',
+                                                                    durationColor: '#000000',
+                                                                    tooltipColor: '#7c7c7c',
+                                                                    tooltipTextColor: '#ffffff',
+
+                                                                }
+                                                            },
+                                                            clip: { url: idPath,
+                                                                    autoPlay: true,
+                                                                    autoBuffering: true,
+
+
+                                                                }
+                                                            });
+                                                }
+
+                                    </script>
+                                </div>
+                                <!-- video-pop-up -->
+                                <div class="om-media-title-bx">
+                                    <a href="/mediacenter/tvc">MORE TVCs</a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/pressrelease/_334"><img src="/assets/media/press_release/thumb/Press_release.png" width="219" height="120" alt="Competition Commission of Pakistan approves Mobilink’s merger with Warid"></a>
+                                            <h4>Competition Commission of Pa...</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/pressrelease/_333"><img src="/assets/media/press_release/thumb/Press_release.png" width="219" height="120" alt="Warid launches postpaid super monthly bundle"></a>
+                                            <h4>Warid launches postpaid supe...</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/pressrelease/_332"><img src="/assets/media/press_release/thumb/Press_release.png" width="219" height="120" alt="Warid joins hands with UWC (United World Colleges Pakistan)"></a>
+                                            <h4>Warid joins hands with UWC (...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="om-media-title-bx">
+                                    <a href="/mediacenter/pressrelease">MORE PRESS RELEASES</a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/events/_18"><img src="/assets/media/events/category/warid-sk.png" width="219" height="120" alt="Warid Spread Think Pink"></a>
+                                            <h4>Warid Spread Think Pink</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/events/_27"><img src="/assets/media/events/category/bA%20guiding%20guests.png" width="219" height="120" alt="Movie Night 2014"></a>
+                                            <h4>Movie Night 2014</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="/mediacenter/events/_28"><img src="/assets/media/events/category/playing-image-6.png" width="219" height="120" alt="Grand Tambola 2014"></a>
+                                            <h4>Grand Tambola 2014</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="om-media-title-bx">
+                                    <a href="/mediacenter/events">MORE EVENTS</a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="assets/media/corporate_magazine/Warid-LTE-MyWarid-Magazine-2nd-Issue-RS.pdf" target="_blank"><img src="/assets/media/corporate_magazine/corporate_magazine2.png" width="219" height="120" alt="My Warid-Corporate Magazine Vol 2"></a>
+                                            <h4>My Warid-Corporate Magazine Vol 2</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="om-md-box">
+                                            <a href="assets/media/corporate_magazine/April-09-2015-MyWarid-Corporate-Magazine.pdf" target="_blank"><img src="/assets/media/corporate_magazine/corporate_magazine.png" width="219" height="120" alt="My Warid-Corporate Magazine Vol 1"></a>
+                                            <h4>My Warid-Corporate Magazine Vol 1</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="om-media-title-bx">
+                                    <a href="/mediacenter/corporatemagazine">MORE CORPORATE MAGAZINES</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- page content -->
+        <!----------------------------------------Middle content Container---------------------------------------------->
+        <!-----------------------------------------Footer--------------------------------------------------------------->
+        <footer class="footer-box">
+            <div class="col-md-12">
+                <div class="footer-bd-box">
+                    <div class="col-md-9">
+                        <!--Postpaid-->
+                        <div class="footer-links-box">
+                            <ul>
+                                <li class="footer-head">
+                                    POSTPAID
+                                </li>
+                                <li>
+                                    <a href="postpaid/packages/new-postpaid-plans.html">New Postpaid Plans</a>
+                                </li>
+                                <li>
+                                    <a href="postpaid/packages/old-postpaid-plans.html">Old Postpaid Plans</a>
+                                </li>
+                                <li>
+                                    <a href="postpaid/offers.html">Offers</a>
+                                </li>
+                                <li>
+                                    <a href="postpaid/mobile-internet.html">Mobile Internet</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Postpaid-->
+                        <!--Prepaid-->
+                        <div class="footer-links-box">
+                            <ul>
+                                <li class="footer-head">PREPAID</li>
+                                <li><a href="prepaid/packages.html">Packages</a></li>
+                                <li><a href="prepaid/offers.html">Offers</a></li>
+                                <li><a href="prepaid/sms-packages.html">SMS Packages</a></li>
+                                <li><a href="prepaid/mobile-internet.html">Mobile Internet</a></li>
+                            </ul>
+                        </div>
+                        <!--Prepaid-->
+                        <!--International Roaming-->
+                        <div class="footer-links-box">
+                            <ul>
+                                <li class="footer-head">
+                                    INTL. ROAMING
+                                </li>
+                                <li>
+                                    <a href="ir/prepaid.html">Prepaid IR</a>
+                                </li>
+                                <li>
+                                    <a href="ir/postpaid.html">Postpaid IR</a>
+                                </li>
+                                <li>
+                                    <a href="#">&nbsp;</a>
+                                    <!--<a href="http://www.waridtel.com/ir/postpaid/international-roaming">Postpaid IR</a>-->
+                                </li>
+                                <li>
+                                    <a href="#">&nbsp;</a>
+                                    <!--<a href="http://www.waridtel.com/ir/postpaid/international-roaming">Postpaid IR</a>-->
+                                </li>
+                            </ul>
+                        </div>
+                        <!--International Roaming-->
+                        <!--VAS (PRODUCTS-->
+                        <div class="footer-links-box">
+                            <ul>
+                                <li class="footer-head">
+                                    VAS
+                                </li>
+                                <li>
+                                    <a href="products/entertainment.html">Entertainment</a>
+                                </li>
+                                <li>
+                                    <a href="products/music.html">Music</a>
+                                </li>
+                                <li>
+                                    <a href="products/balance-transfer-services.html">Balance Transfer</a>
+                                </li>
+                                <li>
+                                    <a href="products/utilities.html">Utilities</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--VAS (PRODUCTS-->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-social-head">JOIN US</div>
+
+                        <div class="col-md-6">
+                            <div class="social-boxes"><a href="https://www.facebook.com/OfficialWarid" target="_blank"><img src="/assets/images/fb-social.png" alt="Facebook" /><span style="float:right;">&nbsp;Facebook</span></a></div>
+                            <div class="social-boxes"><a href="http://www.linkedin.com/company/166868?trk=tyah" target="_blank"><img src="/assets/images/linked-inn-social.png" alt="Facebook" /><span style="float:right;">&nbsp;LinkedIn</span></a></div>
+                            <div class="social-boxes"><a href="http://www.instagram.com/officialwarid/" target="_blank"><img src="/assets/images/insta-social.png" alt="Facebook" /><span style="float:right;">&nbsp;Instagram</span></a></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="social-boxes"><a href="https://twitter.com/officialwarid" target="_blank"><img src="/assets/images/twitter-social.png" alt="Facebook" /><span style="float:right;">&nbsp;Twitter</span></a></div>
+                            <div class="social-boxes"><a href="http://www.pinterest.com/officialwarid/" target="_blank"><img src="/assets/images/pin-social.png" alt="Facebook" /><span style="float:right;">&nbsp;Pinterest</span></a></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ftr-btm-lnks-box">
+                    <div class="col-md-8">
+                        <ul>
+                            <li><a href="media-center.html">MEDIA CENTER</a></li>
+                            <li><a href="http://careers.waridtel.com/" target="_blank">CAREERS</a></li>
+                            <!--<li><a href="http://glow.net.pk/" target="_blank">GLOW</a></li>-->
+                            <li><a href="coverage.html">COVERAGE</a></li>
+                            <li><a href="customer-care/consumer-manual.html" target="_blank">CONSUMER MANUAL</a></li>
+                            <li><a href="avoid-fraud.html">AVOID FRAUD</a></li>
+                            <li><a href="http://members.waridtel.com/" target="_blank">MEMBERS AREA</a></li>
+                            <li><a href="customer-care/contact-us.html">CONTACT US</a></li>
+                            <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+                            <li><a href="sitemap.html">SITE MAP</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4"><div class="copyright-box"> Copyright 2015, Warid Telecom (Pvt) Limited. All rights reserved</div></div>
+                </div>
+            </div>
+        </footer>
+        <!-----------------------------------------Footer--------------------------------------------------------------->
+
+    </div>
+</div>

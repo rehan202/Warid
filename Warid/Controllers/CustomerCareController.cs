@@ -17,5 +17,52 @@ namespace Warid.Controllers
         {
             return View();
         }
+        public ActionResult businesscentresfranchises()
+        {
+            return View();
+        }
+
+        public ActionResult complaintstatusservice()
+        {
+            return View();
+        }
+
+        public ActionResult consumermanual()
+        {
+            return View();
+        }
+
+        public ActionResult customersurvey()
+        {
+            return View();
+        }
+        public ActionResult gprsmmssettings()
+        {
+            return View();
+        }
+
+        public ActionResult overseassiminfo()
+        {
+            return View();
+        }
+
+        public ActionResult paymentsolutions()
+        {
+            return View();
+        }
+        public ActionResult reservesimonline()
+        {
+            return View();
+        }
+
+        public ActionResult selfservices()
+        {
+            return View();
+        }
+
+        public ActionResult termsandconditions()
+        {
+            return View();
+        }
     }
 }
