@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace Warid.Controllers
 {
-    public class internationalroamingController : Controller
+    public class mobileinternetsharingController : Controller
     {
-        // GET: internationalroaming
-        public ActionResult prepaidtariff()
+        // GET: mobileinternetsharing
+        public ActionResult Index()
         {
             return View();
         }
