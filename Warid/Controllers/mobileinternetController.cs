@@ -8,6 +8,7 @@ namespace Warid.Controllers
 {
     public class mobileinternetController : Controller
     {
+<<<<<<< HEAD
         // GET: mobileinternet
         public ActionResult WaridSocialPack()
         {
@@ -23,6 +24,17 @@ namespace Warid.Controllers
         }
 
         public ActionResult prepaidsharedinternetplans()
+=======
+        public ActionResult gprsbundles()
+        {
+            return View();
+        }
+        public ActionResult postpaidsharedinternetplans()
+        {
+            return View();
+        }
+        public ActionResult unlimitededge()
+>>>>>>> 18438304d74f3f985242d2a558024c213d532da6
         {
             return View();
         }
